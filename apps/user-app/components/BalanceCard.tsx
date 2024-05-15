@@ -1,6 +1,6 @@
 import { Card } from "@repo/ui/card";
 
-export const BalanceCard = ({amount, locked}: {
+export const BalanceCard = ({locked,amount}: {
     amount: number;
     locked: number;
 }) => {
@@ -26,7 +26,7 @@ export const BalanceCard = ({amount, locked}: {
                 Total Balance
             </div>
             <div>
-                {(locked + amount) / 100} INR
+                {(amount) / 100} INR
             </div>
         </div>
     </Card>
